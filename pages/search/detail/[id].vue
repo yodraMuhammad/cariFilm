@@ -10,7 +10,7 @@ onMounted;
 <template>
   <section id="detail" class="pt-36 mb-20">
     <div class="container">
-      <div class="flex">
+      <div class="flex flex-wrap">
         <div class="w-full md:w-1/3 sm:1/1">
           <img :src="film.Poster" alt="" />
         </div>
