@@ -1,7 +1,5 @@
 <template>
     <div id="home" class="">
-    <!-- <div id="home" class="bg-gradient-to-r from-cyan-500 to-blue-500"> -->
-      <!-- <NuxtWelcome /> -->
       <div class="container mt-30 mt-44 mb-44">
         <div class="flex flex-wrap mt-30 mb-30">
             <div class="w-full self-center px-4 lg:w-1/2 md:w-1/2 sm:w-1/1 mb-10">

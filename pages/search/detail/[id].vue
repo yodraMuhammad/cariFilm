@@ -1,9 +1,10 @@
 <script setup>
 const route = useRoute();
-console.log(route.params.id);
-const { data: film } = await useFetch(
-  "http://www.omdbapi.com/?apiKey=41243417&i=" + route.params.id
+const { data: film } = await useLazyFetch(
+  "https://www.omdbapi.com/?apiKey=41243417&i=" + route.params.id
 );
+
+onMounted;
 </script>
 
 <template>
@@ -22,7 +23,7 @@ const { data: film } = await useFetch(
                 <th class="p-2">Kolom 2</th>
               </tr>
             </thead> -->
-            <tbody >
+            <tbody>
               <tr>
                 <td class="p-2 align-top">Rilis</td>
                 <td class="p-2 align-top">:</td>
@@ -68,7 +69,6 @@ const { data: film } = await useFetch(
                 <td class="p-2 align-top">:</td>
                 <td class="p-2 align-top">{{ film.Plot }}</td>
               </tr>
-              <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
             </tbody>
           </table>
         </div>

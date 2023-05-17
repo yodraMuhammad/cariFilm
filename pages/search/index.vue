@@ -97,9 +97,6 @@ export default {
 </script>
 
 <script setup>
-const { data: film } = await useFetch(
-  "http://www.omdbapi.com/?apiKey=41243417&i=tt1285016"
-);
 
 definePageMeta({
   layouts: "default",
