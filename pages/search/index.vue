@@ -87,7 +87,7 @@ export default {
     },
     async cariFilm(input) {
       const { data: film } = await useFetch(
-        "http://www.omdbapi.com/?apiKey=41243417&s=" + input
+        "https://www.omdbapi.com/?apiKey=41243417&s=" + input
       );
       this.datas = film._rawValue.Search;
       console.log(film._rawValue.Search);
