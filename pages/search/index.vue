@@ -16,9 +16,6 @@
           <p class="font-medium text-secondary mb-10 leadinng-relaxed">
             Website pencarian film adalah sebuah platform online yang memungkinkan pengguna untuk mencari informasi tentang film-film yang ada. Website tersebut menyediakan berbagai fitur dan fungsi yang membantu pengguna untuk menemukan film-film yang mereka cari.
           </p>
-          <!-- <p class="font-medium text-secondary mb-10 mt-10 leadinng-relaxed text-red-700">
-            Tekan Enter 2 Kali, Atau Klik 2 Kali ketika menjalankan fungsi cari, Karena masih ada problem di asynchronous :(
-          </p> -->
         </div>
       </div>
 
@@ -88,16 +85,13 @@ export default {
     setFilm(data) {
       this.films = data;
     },
-    cariFilm(input) {
-      const { data: film } = useFetch(
+    async cariFilm(input) {
+      const { data: film } = await useFetch(
         "http://www.omdbapi.com/?apiKey=41243417&s=" + input
       );
       this.datas = film._rawValue.Search;
       console.log(film._rawValue.Search);
     },
-  },
-  mounted() {
-    // alert('Tekan Enter 2 Kali, Atau Klik 2 Kali ketika menjalankan fungsi cari, Karena masih ada problem di asynchronous :(')
   },
 };
 </script>
