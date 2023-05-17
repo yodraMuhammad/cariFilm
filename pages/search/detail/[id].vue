@@ -39,6 +39,11 @@ const { data: film } = await useFetch(
                 <td class="p-2 align-top">{{ film.Genre }}</td>
               </tr>
               <tr>
+                <td class="p-2 align-top">Director</td>
+                <td class="p-2 align-top">:</td>
+                <td class="p-2 align-top">{{ film.Director }}</td>
+              </tr>
+              <tr>
                 <td class="p-2 align-top">Actors</td>
                 <td class="p-2 align-top">:</td>
                 <td class="p-2 align-top">{{ film.Actors }}</td>
@@ -52,6 +57,11 @@ const { data: film } = await useFetch(
                 <td class="p-2 align-top">Language</td>
                 <td class="p-2 align-top">:</td>
                 <td class="p-2 align-top">{{ film.Language }}</td>
+              </tr>
+              <tr>
+                <td class="p-2 align-top">Country</td>
+                <td class="p-2 align-top">:</td>
+                <td class="p-2 align-top">{{ film.Country }}</td>
               </tr>
               <tr>
                 <td class="p-2 align-top">Plot</td>

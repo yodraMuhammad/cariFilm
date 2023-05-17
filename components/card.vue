@@ -15,7 +15,7 @@
 
           <!-- Button -->
           <div class="py-6">
-            <nuxt-link :to="'/detail/'+id" class="w-1/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-4">See Detail</nuxt-link>
+            <nuxt-link :to="'/search/detail/'+id" class="w-1/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-4">See Detail</nuxt-link>
           </div>
         </div>
       </div>

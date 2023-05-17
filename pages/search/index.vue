@@ -16,9 +16,9 @@
           <p class="font-medium text-secondary mb-10 leadinng-relaxed">
             Website pencarian film adalah sebuah platform online yang memungkinkan pengguna untuk mencari informasi tentang film-film yang ada. Website tersebut menyediakan berbagai fitur dan fungsi yang membantu pengguna untuk menemukan film-film yang mereka cari.
           </p>
-          <p class="font-medium text-secondary mb-10 mt-10 leadinng-relaxed text-red-700">
+          <!-- <p class="font-medium text-secondary mb-10 mt-10 leadinng-relaxed text-red-700">
             Tekan Enter 2 Kali, Atau Klik 2 Kali ketika menjalankan fungsi cari, Karena masih ada problem di asynchronous :(
-          </p>
+          </p> -->
         </div>
       </div>
 
@@ -54,7 +54,7 @@
           v-for="data in datas"
           :key="data.id"
         >
-          <nuxt-link :to="'/detail/'+data.imdbID">
+          <nuxt-link :to="'/search/detail/'+data.imdbID">
             <card
               class="card"
               :title="data.Title"
@@ -97,7 +97,7 @@ export default {
     },
   },
   mounted() {
-    alert('Tekan Enter 2 Kali, Atau Klik 2 Kali ketika menjalankan fungsi cari, Karena masih ada problem di asynchronous :(')
+    // alert('Tekan Enter 2 Kali, Atau Klik 2 Kali ketika menjalankan fungsi cari, Karena masih ada problem di asynchronous :(')
   },
 };
 </script>
