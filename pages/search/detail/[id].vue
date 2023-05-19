@@ -12,11 +12,11 @@ console.log(data._rawValue)
 <template>
   <section id="detail" class="pt-36 mb-20">
     <div class="container">
-      <div class="flex">
-        <div class="md:w-1/3">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/3 sm:1/1">
           <img :src="film.Poster" alt="" />
         </div>
-        <div class="md:w-2/3">
+        <div class="w-full md:w-2/3 sm:1/1">
           <h1 class="text-4xl mb-6">{{ film.Title }}</h1>
           <table class="border-collapse">
             
